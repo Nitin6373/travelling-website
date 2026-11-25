@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Destinations – Musafir Travels</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="bar">
+    <a class="logo" href="index.html" style="text-decoration:none">🧳 Musafir</a>
+    <nav aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="hotels.html">Hotels</a>
+      <a href="flights.html">Flights</a>
+      <a href="itinerary.html">My Trips</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html">Contact</a>
+      <a href="admin.html" id="adminLink" hidden>Admin</a>
+      <a href="login.html" id="authLink" class="btn sm">Log in</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<h2>Destinations & packages</h2>
+<form class="panel row" id="filter">
+  <div><label for="fq">Search</label><input id="fq" type="search" placeholder="Goa, beach, heritage"></div>
+  <div><label for="ft">Type</label><select id="ft"><option value="">All</option><option>Beach</option><option>Nature</option><option>Heritage</option><option>Adventure</option><option>City</option></select></div>
+  <div><label for="fm">Max price: <span id="maxOut">₹1,00,000</span></label><input id="fm" type="range" min="10000" max="100000" step="5000" value="100000"></div>
+  <div><label for="fs">Sort by</label><select id="fs"><option value="rating">Top rated</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></div>
+</form>
+<div class="grid" id="pkgGrid">
+    <div class="card" data-id="1" data-name="Goa Beach Escape" data-place="Goa" data-type="Beach" data-price="18500" data-rating="4.6">
+      <div class="ph g2">🏖️</div>
+      <div class="bd">
+        <span class="meta">Goa · Beach · 4 days</span>
+        <h3>Goa Beach Escape</h3>
+        <div class="star">★★★★★ <span class="mut">4.6</span></div>
+        <p class="mut">Sun, sand and seafood on India’s west coast.</p>
+        <div class="cardfoot"><span class="price">₹18,500</span><a class="btn sm" href="package.html#p1">View details</a></div>
+      </div>
+    </div>
+    <div class="card" data-id="2" data-name="Kerala Backwaters" data-place="Kochi" data-type="Nature" data-price="24900" data-rating="4.8">
+      <div class="ph g4">🛶</div>
+      <div class="bd">
+        <span class="meta">Kochi · Nature · 5 days</span>
+        <h3>Kerala Backwaters</h3>
+        <div class="star">★★★★★ <span class="mut">4.8</span></div>
+        <p class="mut">Houseboat nights, tea hills and spice gardens.</p>
+        <div class="cardfoot"><span class="price">₹24,900</span><a class="btn sm" href="package.html#p2">View details</a></div>
+      </div>
+    </div>
+    <div class="card" data-id="3" data-name="Royal Rajasthan" data-place="Jaipur" data-type="Heritage" data-price="27500" data-rating="4.7">
+      <div class="ph g0">🏰</div>
+      <div class="bd">
+        <span class="meta">Jaipur · Heritage · 5 days</span>
+        <h3>Royal Rajasthan</h3>
+        <div class="star">★★★★★ <span class="mut">4.7</span></div>
+        <p class="mut">Forts, palaces and bazaars in the Pink City.</p>
+        <div class="cardfoot"><span class="price">₹27,500</span><a class="btn sm" href="package.html#p3">View details</a></div>
+      </div>
+    </div>
+    <div class="card" data-id="4" data-name="Manali Snow Retreat" data-place="Manali" data-type="Adventure" data-price="31000" data-rating="4.5">
+      <div class="ph g2">🏔️</div>
+      <div class="bd">
+        <span class="meta">Manali · Adventure · 6 days</span>
+        <h3>Manali Snow Retreat</h3>
+        <div class="star">★★★★☆ <span class="mut">4.5</span></div>
+        <p class="mut">Snow drives, Solang valley and river rafting.</p>
+        <div class="cardfoot"><span class="price">₹31,000</span><a class="btn sm" href="package.html#p4">View details</a></div>
+      </div>
+    </div>
+    <div class="card" data-id="5" data-name="Bali Island Break" data-place="Bali" data-type="Beach" data-price="62000" data-rating="4.9">
+      <div class="ph g4">🌴</div>
+      <div class="bd">
+        <span class="meta">Bali · Beach · 6 days</span>
+        <h3>Bali Island Break</h3>
+        <div class="star">★★★★★ <span class="mut">4.9</span></div>
+        <p class="mut">Rice terraces, temples and surf in Bali.</p>
+        <div class="cardfoot"><span class="price">₹62,000</span><a class="btn sm" href="package.html#p5">View details</a></div>
+      </div>
+    </div>
+    <div class="card" data-id="6" data-name="Dubai Luxe Weekend" data-place="Dubai" data-type="City" data-price="54000" data-rating="4.6">
+      <div class="ph g0">🌆</div>
+      <div class="bd">
+        <span class="meta">Dubai · City · 4 days</span>
+        <h3>Dubai Luxe Weekend</h3>
+        <div class="star">★★★★★ <span class="mut">4.6</span></div>
+        <p class="mut">Skyline views, desert safari and shopping.</p>
+        <div class="cardfoot"><span class="price">₹54,000</span><a class="btn sm" href="package.html#p6">View details</a></div>
+      </div>
+    </div>
+</div>
+<p class="mut" id="noPkg" hidden>No packages match. Raise the price limit or clear the search.</p>
+</main>
+
+<footer>© 2026 Musafir Travels · Surat, Gujarat · support@musafir.example · Mon–Sat, 9am–7pm</footer>
+<div id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>

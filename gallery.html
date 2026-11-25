@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gallery – Musafir Travels</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="bar">
+    <a class="logo" href="index.html" style="text-decoration:none">🧳 Musafir</a>
+    <nav aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="hotels.html">Hotels</a>
+      <a href="flights.html">Flights</a>
+      <a href="itinerary.html">My Trips</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html">Contact</a>
+      <a href="admin.html" id="adminLink" hidden>Admin</a>
+      <a href="login.html" id="authLink" class="btn sm">Log in</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<h2>Photo gallery</h2>
+<div class="tabs" id="galTabs">
+  <button class="btn sm" onclick="filterGallery('All',this)">All</button>
+  <button class="btn alt sm" onclick="filterGallery('Beach',this)">Beach</button>
+  <button class="btn alt sm" onclick="filterGallery('Nature',this)">Nature</button>
+  <button class="btn alt sm" onclick="filterGallery('Heritage',this)">Heritage</button>
+  <button class="btn alt sm" onclick="filterGallery('Adventure',this)">Adventure</button>
+  <button class="btn alt sm" onclick="filterGallery('City',this)">City</button>
+</div>
+<div class="gal" id="galGrid">
+    <div role="button" tabindex="0" class="g0" style="--h:150px" data-t="Beach" data-place="Goa" onclick="openPhoto(this)" aria-label="Goa">🏖️</div>
+    <div role="button" tabindex="0" class="g1" style="--h:187px" data-t="Nature" data-place="Kerala" onclick="openPhoto(this)" aria-label="Kerala">🛶</div>
+    <div role="button" tabindex="0" class="g2" style="--h:224px" data-t="Heritage" data-place="Jaipur" onclick="openPhoto(this)" aria-label="Jaipur">🏰</div>
+    <div role="button" tabindex="0" class="g3" style="--h:171px" data-t="Adventure" data-place="Manali" onclick="openPhoto(this)" aria-label="Manali">🏔️</div>
+    <div role="button" tabindex="0" class="g4" style="--h:208px" data-t="Beach" data-place="Bali" onclick="openPhoto(this)" aria-label="Bali">🌴</div>
+    <div role="button" tabindex="0" class="g5" style="--h:155px" data-t="City" data-place="Dubai" onclick="openPhoto(this)" aria-label="Dubai">🌆</div>
+    <div role="button" tabindex="0" class="g0" style="--h:192px" data-t="Beach" data-place="Goa" onclick="openPhoto(this)" aria-label="Goa">🌅</div>
+    <div role="button" tabindex="0" class="g1" style="--h:229px" data-t="Nature" data-place="Kerala" onclick="openPhoto(this)" aria-label="Kerala">🐘</div>
+    <div role="button" tabindex="0" class="g2" style="--h:176px" data-t="Heritage" data-place="Jaipur" onclick="openPhoto(this)" aria-label="Jaipur">🕌</div>
+    <div role="button" tabindex="0" class="g3" style="--h:213px" data-t="Adventure" data-place="Manali" onclick="openPhoto(this)" aria-label="Manali">❄️</div>
+    <div role="button" tabindex="0" class="g4" style="--h:160px" data-t="Heritage" data-place="Bali" onclick="openPhoto(this)" aria-label="Bali">🛕</div>
+    <div role="button" tabindex="0" class="g5" style="--h:197px" data-t="Adventure" data-place="Dubai" onclick="openPhoto(this)" aria-label="Dubai">🏜️</div>
+</div>
+</main>
+
+<footer>© 2026 Musafir Travels · Surat, Gujarat · support@musafir.example · Mon–Sat, 9am–7pm</footer>
+<div id="toast"></div>
+<div id="lb" onclick="closePhoto()"></div>
+<script src="script.js"></script>
+</body>
+</html>

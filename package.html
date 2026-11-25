@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Package details – Musafir Travels</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="bar">
+    <a class="logo" href="index.html" style="text-decoration:none">🧳 Musafir</a>
+    <nav aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="hotels.html">Hotels</a>
+      <a href="flights.html">Flights</a>
+      <a href="itinerary.html">My Trips</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html">Contact</a>
+      <a href="admin.html" id="adminLink" hidden>Admin</a>
+      <a href="login.html" id="authLink" class="btn sm">Log in</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="pkg" id="p1" data-name="Goa Beach Escape" data-price="18500">
+  <a class="btn alt sm" href="destinations.html">← All destinations</a>
+  <div class="hero light g2" style="margin-top:1rem">
+    <span class="big">🏖️</span>
+    <h1>Goa Beach Escape</h1>
+    <p>Sun, sand and seafood on India’s west coast.</p>
+    <div class="star">★★★★★ 4.6 · 4 days · Beach</div>
+  </div>
+  <div class="row top">
+    <div class="panel pkgBox">
+      <h2>Itinerary</h2>
+      <div class="tl"><div><b>Day 1</b><br>Arrive, check in, sunset at Baga</div><div><b>Day 2</b><br>North Goa forts and Anjuna market</div><div><b>Day 3</b><br>Dolphin cruise and water sports</div><div><b>Day 4</b><br>Old Goa churches, departure</div></div>
+      <h3>Included</h3>
+      <span class="tag">✓ Beachfront stay</span><span class="tag">✓ Airport transfers</span><span class="tag">✓ Breakfast daily</span><span class="tag">✓ Water sports</span>
+    </div>
+    <div class="panel sideBox">
+      <div class="price" style="font-size:1.8rem">₹18,500</div>
+      <span class="mut">per person</span>
+      <label for="date1">Travel date</label><input type="date" id="date1">
+      <label for="people1">Travellers</label><input type="number" id="people1" min="1" max="10" value="2">
+      <button class="btn sun" style="width:100%;margin-top:1rem" onclick="bookPackage(1)">Book this package</button>
+    </div>
+  </div>
+  <h2>Reviews</h2>
+  <div class="userRv" data-pkg="Goa Beach Escape"></div>
+  <a class="btn alt" href="reviews.html">Write a review</a>
+</section>
+<section class="pkg" id="p2" data-name="Kerala Backwaters" data-price="24900">
+  <a class="btn alt sm" href="destinations.html">← All destinations</a>
+  <div class="hero light g4" style="margin-top:1rem">
+    <span class="big">🛶</span>
+    <h1>Kerala Backwaters</h1>
+    <p>Houseboat nights, tea hills and spice gardens.</p>
+    <div class="star">★★★★★ 4.8 · 5 days · Nature</div>
+  </div>
+  <div class="row top">
+    <div class="panel pkgBox">
+      <h2>Itinerary</h2>
+      <div class="tl"><div><b>Day 1</b><br>Kochi heritage walk</div><div><b>Day 2</b><br>Drive to Munnar, tea gardens</div><div><b>Day 3</b><br>Eravikulam park, spice trail</div><div><b>Day 4</b><br>Alleppey houseboat check-in</div><div><b>Day 5</b><br>Backwater sunrise, departure</div></div>
+      <h3>Included</h3>
+      <span class="tag">✓ Houseboat night</span><span class="tag">✓ Munnar tea estate visit</span><span class="tag">✓ All meals on boat</span><span class="tag">✓ Private cab</span>
+    </div>
+    <div class="panel sideBox">
+      <div class="price" style="font-size:1.8rem">₹24,900</div>
+      <span class="mut">per person</span>
+      <label for="date2">Travel date</label><input type="date" id="date2">
+      <label for="people2">Travellers</label><input type="number" id="people2" min="1" max="10" value="2">
+      <button class="btn sun" style="width:100%;margin-top:1rem" onclick="bookPackage(2)">Book this package</button>
+    </div>
+  </div>
+  <h2>Reviews</h2>
+  <div class="userRv" data-pkg="Kerala Backwaters"></div>
+  <a class="btn alt" href="reviews.html">Write a review</a>
+</section>
+<section class="pkg" id="p3" data-name="Royal Rajasthan" data-price="27500">
+  <a class="btn alt sm" href="destinations.html">← All destinations</a>
+  <div class="hero light g0" style="margin-top:1rem">
+    <span class="big">🏰</span>
+    <h1>Royal Rajasthan</h1>
+    <p>Forts, palaces and bazaars in the Pink City.</p>
+    <div class="star">★★★★★ 4.7 · 5 days · Heritage</div>
+  </div>
+  <div class="row top">
+    <div class="panel pkgBox">
+      <h2>Itinerary</h2>
+      <div class="tl"><div><b>Day 1</b><br>Arrive in Jaipur, Hawa Mahal</div><div><b>Day 2</b><br>Amber Fort and City Palace</div><div><b>Day 3</b><br>Day trip to Pushkar</div><div><b>Day 4</b><br>Jaipur bazaars and block printing</div><div><b>Day 5</b><br>Departure</div></div>
+      <h3>Included</h3>
+      <span class="tag">✓ Heritage hotel</span><span class="tag">✓ Guide at Amber Fort</span><span class="tag">✓ Breakfast daily</span><span class="tag">✓ Elephant-free fort tour</span>
+    </div>
+    <div class="panel sideBox">
+      <div class="price" style="font-size:1.8rem">₹27,500</div>
+      <span class="mut">per person</span>
+      <label for="date3">Travel date</label><input type="date" id="date3">
+      <label for="people3">Travellers</label><input type="number" id="people3" min="1" max="10" value="2">
+      <button class="btn sun" style="width:100%;margin-top:1rem" onclick="bookPackage(3)">Book this package</button>
+    </div>
+  </div>
+  <h2>Reviews</h2>
+  <div class="userRv" data-pkg="Royal Rajasthan"></div>
+  <a class="btn alt" href="reviews.html">Write a review</a>
+</section>
+<section class="pkg" id="p4" data-name="Manali Snow Retreat" data-price="31000">
+  <a class="btn alt sm" href="destinations.html">← All destinations</a>
+  <div class="hero light g2" style="margin-top:1rem">
+    <span class="big">🏔️</span>
+    <h1>Manali Snow Retreat</h1>
+    <p>Snow drives, Solang valley and river rafting.</p>
+    <div class="star">★★★★☆ 4.5 · 6 days · Adventure</div>
+  </div>
+  <div class="row top">
+    <div class="panel pkgBox">
+      <h2>Itinerary</h2>
+      <div class="tl"><div><b>Day 1</b><br>Overnight bus from Delhi</div><div><b>Day 2</b><br>Old Manali and Hadimba temple</div><div><b>Day 3</b><br>Solang valley snow day</div><div><b>Day 4</b><br>Rohtang pass drive</div><div><b>Day 5</b><br>Beas river rafting</div><div><b>Day 6</b><br>Return to Delhi</div></div>
+      <h3>Included</h3>
+      <span class="tag">✓ Mountain cottage</span><span class="tag">✓ Volvo bus from Delhi</span><span class="tag">✓ Adventure activities</span><span class="tag">✓ Breakfast & dinner</span>
+    </div>
+    <div class="panel sideBox">
+      <div class="price" style="font-size:1.8rem">₹31,000</div>
+      <span class="mut">per person</span>
+      <label for="date4">Travel date</label><input type="date" id="date4">
+      <label for="people4">Travellers</label><input type="number" id="people4" min="1" max="10" value="2">
+      <button class="btn sun" style="width:100%;margin-top:1rem" onclick="bookPackage(4)">Book this package</button>
+    </div>
+  </div>
+  <h2>Reviews</h2>
+  <div class="userRv" data-pkg="Manali Snow Retreat"></div>
+  <a class="btn alt" href="reviews.html">Write a review</a>
+</section>
+<section class="pkg" id="p5" data-name="Bali Island Break" data-price="62000">
+  <a class="btn alt sm" href="destinations.html">← All destinations</a>
+  <div class="hero light g4" style="margin-top:1rem">
+    <span class="big">🌴</span>
+    <h1>Bali Island Break</h1>
+    <p>Rice terraces, temples and surf in Bali.</p>
+    <div class="star">★★★★★ 4.9 · 6 days · Beach</div>
+  </div>
+  <div class="row top">
+    <div class="panel pkgBox">
+      <h2>Itinerary</h2>
+      <div class="tl"><div><b>Day 1</b><br>Fly to Denpasar, Seminyak</div><div><b>Day 2</b><br>Surf lesson at Kuta</div><div><b>Day 3</b><br>Ubud rice terraces</div><div><b>Day 4</b><br>Tanah Lot temple sunset</div><div><b>Day 5</b><br>Nusa Penida day trip</div><div><b>Day 6</b><br>Departure</div></div>
+      <h3>Included</h3>
+      <span class="tag">✓ Villa with pool</span><span class="tag">✓ Return flights from Mumbai</span><span class="tag">✓ Ubud tour</span><span class="tag">✓ Visa assistance</span>
+    </div>
+    <div class="panel sideBox">
+      <div class="price" style="font-size:1.8rem">₹62,000</div>
+      <span class="mut">per person</span>
+      <label for="date5">Travel date</label><input type="date" id="date5">
+      <label for="people5">Travellers</label><input type="number" id="people5" min="1" max="10" value="2">
+      <button class="btn sun" style="width:100%;margin-top:1rem" onclick="bookPackage(5)">Book this package</button>
+    </div>
+  </div>
+  <h2>Reviews</h2>
+  <div class="userRv" data-pkg="Bali Island Break"></div>
+  <a class="btn alt" href="reviews.html">Write a review</a>
+</section>
+<section class="pkg" id="p6" data-name="Dubai Luxe Weekend" data-price="54000">
+  <a class="btn alt sm" href="destinations.html">← All destinations</a>
+  <div class="hero light g0" style="margin-top:1rem">
+    <span class="big">🌆</span>
+    <h1>Dubai Luxe Weekend</h1>
+    <p>Skyline views, desert safari and shopping.</p>
+    <div class="star">★★★★★ 4.6 · 4 days · City</div>
+  </div>
+  <div class="row top">
+    <div class="panel pkgBox">
+      <h2>Itinerary</h2>
+      <div class="tl"><div><b>Day 1</b><br>Arrive, Dubai Marina walk</div><div><b>Day 2</b><br>Burj Khalifa and Dubai Mall</div><div><b>Day 3</b><br>Desert safari with BBQ dinner</div><div><b>Day 4</b><br>Old Dubai souks, departure</div></div>
+      <h3>Included</h3>
+      <span class="tag">✓ 4-star hotel</span><span class="tag">✓ Burj Khalifa ticket</span><span class="tag">✓ Desert safari dinner</span><span class="tag">✓ Metro pass</span>
+    </div>
+    <div class="panel sideBox">
+      <div class="price" style="font-size:1.8rem">₹54,000</div>
+      <span class="mut">per person</span>
+      <label for="date6">Travel date</label><input type="date" id="date6">
+      <label for="people6">Travellers</label><input type="number" id="people6" min="1" max="10" value="2">
+      <button class="btn sun" style="width:100%;margin-top:1rem" onclick="bookPackage(6)">Book this package</button>
+    </div>
+  </div>
+  <h2>Reviews</h2>
+  <div class="userRv" data-pkg="Dubai Luxe Weekend"></div>
+  <a class="btn alt" href="reviews.html">Write a review</a>
+</section>
+
+</main>
+
+<footer>© 2026 Musafir Travels · Surat, Gujarat · support@musafir.example · Mon–Sat, 9am–7pm</footer>
+<div id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>

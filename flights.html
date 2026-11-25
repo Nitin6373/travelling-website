@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flights – Musafir Travels</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="bar">
+    <a class="logo" href="index.html" style="text-decoration:none">🧳 Musafir</a>
+    <nav aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="hotels.html">Hotels</a>
+      <a href="flights.html">Flights</a>
+      <a href="itinerary.html">My Trips</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html">Contact</a>
+      <a href="admin.html" id="adminLink" hidden>Admin</a>
+      <a href="login.html" id="authLink" class="btn sm">Log in</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<h2>Flights</h2>
+<form class="panel row" id="flightForm">
+  <div><label for="ff">From</label><select id="ff"><option>Surat</option><option>Mumbai</option><option>Delhi</option><option>Goa</option><option>Kochi</option><option>Jaipur</option><option>Manali</option><option>Bali</option><option>Dubai</option></select></div>
+  <div><label for="fto">To</label><select id="fto"><option>Goa</option><option>Kochi</option><option>Jaipur</option><option>Manali</option><option>Bali</option><option>Dubai</option><option>Surat</option><option>Mumbai</option><option>Delhi</option></select></div>
+  <div><label for="fd">Date</label><input type="date" id="fd"></div>
+  <div><button class="btn" style="width:100%">Search flights</button></div>
+</form>
+<div id="flightResults"><p class="mut">Pick your route and date to see fares.</p></div>
+</main>
+
+<footer>© 2026 Musafir Travels · Surat, Gujarat · support@musafir.example · Mon–Sat, 9am–7pm</footer>
+<div id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>

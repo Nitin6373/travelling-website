@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact – Musafir Travels</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="bar">
+    <a class="logo" href="index.html" style="text-decoration:none">🧳 Musafir</a>
+    <nav aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="hotels.html">Hotels</a>
+      <a href="flights.html">Flights</a>
+      <a href="itinerary.html">My Trips</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html">Contact</a>
+      <a href="admin.html" id="adminLink" hidden>Admin</a>
+      <a href="login.html" id="authLink" class="btn sm">Log in</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<h2>Contact us</h2>
+<div class="row top">
+  <form class="panel" style="flex:2 1 300px" id="contactForm">
+    <label for="cn">Name</label><input id="cn" required>
+    <label for="ce">Email</label><input id="ce" type="email" required>
+    <label for="cm">Message</label><textarea id="cm" rows="5" required></textarea>
+    <button class="btn" style="margin-top:.8rem">Send message</button>
+  </form>
+  <div class="panel" style="flex:1 1 220px">
+    <h3>Talk to a real person</h3>
+    <p>Meera and Jay read every message themselves and usually reply within a day. Tell us where you’re dreaming of going.</p>
+    <p class="mut">support@musafir.example<br>Mon–Sat, 9am–7pm IST<br>Surat, Gujarat</p>
+  </div>
+</div>
+</main>
+
+<footer>© 2026 Musafir Travels · Surat, Gujarat · support@musafir.example · Mon–Sat, 9am–7pm</footer>
+<div id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>

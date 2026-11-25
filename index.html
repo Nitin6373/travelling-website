@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home – Musafir Travels</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="bar">
+    <a class="logo" href="index.html" style="text-decoration:none">🧳 Musafir</a>
+    <nav aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="hotels.html">Hotels</a>
+      <a href="flights.html">Flights</a>
+      <a href="itinerary.html">My Trips</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html">Contact</a>
+      <a href="admin.html" id="adminLink" hidden>Admin</a>
+      <a href="login.html" id="authLink" class="btn sm">Log in</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <span class="big">🧭</span>
+  <h1>Where to next?</h1>
+  <p>Trips planned by a small team in Surat who have actually been there. Pick a place and we’ll sort the rest.</p>
+  <form class="sbox" id="heroSearch">
+    <input type="search" id="heroQ" placeholder="Search a destination" aria-label="Destination">
+    <select id="heroType" aria-label="Type"><option value="">All</option><option>Beach</option><option>Nature</option><option>Heritage</option><option>Adventure</option><option>City</option></select>
+    <button class="btn sun">Search trips</button>
+  </form>
+</section>
+
+<h2 class="pad">Popular packages</h2>
+<div class="grid" id="homeGrid">
+    <div class="card" data-id="1" data-name="Goa Beach Escape" data-place="Goa" data-type="Beach" data-price="18500" data-rating="4.6">
+      <div class="ph g2">🏖️</div>
+      <div class="bd">
+        <span class="meta">Goa · Beach · 4 days</span>
+        <h3>Goa Beach Escape</h3>
+        <div class="star">★★★★★ <span class="mut">4.6</span></div>
+        <p class="mut">Sun, sand and seafood on India’s west coast.</p>
+        <div class="cardfoot"><span class="price">₹18,500</span><a class="btn sm" href="package.html#p1">View details</a></div>
+      </div>
+    </div>
+    <div class="card" data-id="2" data-name="Kerala Backwaters" data-place="Kochi" data-type="Nature" data-price="24900" data-rating="4.8">
+      <div class="ph g4">🛶</div>
+      <div class="bd">
+        <span class="meta">Kochi · Nature · 5 days</span>
+        <h3>Kerala Backwaters</h3>
+        <div class="star">★★★★★ <span class="mut">4.8</span></div>
+        <p class="mut">Houseboat nights, tea hills and spice gardens.</p>
+        <div class="cardfoot"><span class="price">₹24,900</span><a class="btn sm" href="package.html#p2">View details</a></div>
+      </div>
+    </div>
+    <div class="card" data-id="3" data-name="Royal Rajasthan" data-place="Jaipur" data-type="Heritage" data-price="27500" data-rating="4.7">
+      <div class="ph g0">🏰</div>
+      <div class="bd">
+        <span class="meta">Jaipur · Heritage · 5 days</span>
+        <h3>Royal Rajasthan</h3>
+        <div class="star">★★★★★ <span class="mut">4.7</span></div>
+        <p class="mut">Forts, palaces and bazaars in the Pink City.</p>
+        <div class="cardfoot"><span class="price">₹27,500</span><a class="btn sm" href="package.html#p3">View details</a></div>
+      </div>
+    </div>
+</div>
+
+<div class="panel row">
+  <div><h3>Book a hotel</h3><p class="mut">Pick a city, dates and rooms.</p><a class="btn alt" href="hotels.html">Find hotels</a></div>
+  <div><h3>Book a flight</h3><p class="mut">Compare fares between 9 cities.</p><a class="btn alt" href="flights.html">Find flights</a></div>
+  <div><h3>See real traveller reviews</h3><p class="mut">Straight from people who went, good and bad.</p><a class="btn alt" href="reviews.html">Read reviews</a></div>
+</div>
+</main>
+
+<footer>© 2026 Musafir Travels · Surat, Gujarat · support@musafir.example · Mon–Sat, 9am–7pm</footer>
+<div id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hotels – Musafir Travels</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="bar">
+    <a class="logo" href="index.html" style="text-decoration:none">🧳 Musafir</a>
+    <nav aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="hotels.html">Hotels</a>
+      <a href="flights.html">Flights</a>
+      <a href="itinerary.html">My Trips</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html">Contact</a>
+      <a href="admin.html" id="adminLink" hidden>Admin</a>
+      <a href="login.html" id="authLink" class="btn sm">Log in</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<h2>Hotels</h2>
+<form class="panel row" id="hotelOpts">
+  <div><label for="hc">City</label><select id="hc"><option value="">All</option><option>Bali</option><option>Dubai</option><option>Goa</option><option>Jaipur</option><option>Kochi</option><option>Manali</option><option>Mumbai</option></select></div>
+  <div><label for="hi">Check-in</label><input type="date" id="hi"></div>
+  <div><label for="hn">Nights</label><input type="number" id="hn" min="1" max="30" value="2"></div>
+  <div><label for="hr">Rooms</label><input type="number" id="hr" min="1" max="5" value="1"></div>
+</form>
+<div class="grid" id="hotelGrid">
+    <div class="card" data-city="Goa">
+      <div class="ph g1" style="height:110px">🏨</div>
+      <div class="bd">
+        <span class="meta">Goa</span>
+        <h3>Palm Shore Resort</h3>
+        <div class="star">★★★★☆ <span class="mut">4.5</span></div>
+        <div><span class="tag">Pool</span><span class="tag">Beach access</span><span class="tag">Breakfast</span></div>
+        <div class="cardfoot"><span class="price">₹5,200<small>/night</small></span><button class="btn sm" onclick="bookHotel('Palm Shore Resort','Goa',5200)">Book room</button></div>
+      </div>
+    </div>
+    <div class="card" data-city="Goa">
+      <div class="ph g2" style="height:110px">🏨</div>
+      <div class="bd">
+        <span class="meta">Goa</span>
+        <h3>Cove Boutique Stay</h3>
+        <div class="star">★★★★☆ <span class="mut">4.2</span></div>
+        <div><span class="tag">Wi-Fi</span><span class="tag">Cafe</span></div>
+        <div class="cardfoot"><span class="price">₹3,400<small>/night</small></span><button class="btn sm" onclick="bookHotel('Cove Boutique Stay','Goa',3400)">Book room</button></div>
+      </div>
+    </div>
+    <div class="card" data-city="Kochi">
+      <div class="ph g3" style="height:110px">🏨</div>
+      <div class="bd">
+        <span class="meta">Kochi</span>
+        <h3>Lake View Houseboat Inn</h3>
+        <div class="star">★★★★★ <span class="mut">4.6</span></div>
+        <div><span class="tag">Backwater view</span><span class="tag">Meals</span></div>
+        <div class="cardfoot"><span class="price">₹4,100<small>/night</small></span><button class="btn sm" onclick="bookHotel('Lake View Houseboat Inn','Kochi',4100)">Book room</button></div>
+      </div>
+    </div>
+    <div class="card" data-city="Jaipur">
+      <div class="ph g4" style="height:110px">🏨</div>
+      <div class="bd">
+        <span class="meta">Jaipur</span>
+        <h3>Haveli Heritage</h3>
+        <div class="star">★★★★★ <span class="mut">4.7</span></div>
+        <div><span class="tag">Courtyard</span><span class="tag">Spa</span><span class="tag">Breakfast</span></div>
+        <div class="cardfoot"><span class="price">₹6,300<small>/night</small></span><button class="btn sm" onclick="bookHotel('Haveli Heritage','Jaipur',6300)">Book room</button></div>
+      </div>
+    </div>
+    <div class="card" data-city="Manali">
+      <div class="ph g5" style="height:110px">🏨</div>
+      <div class="bd">
+        <span class="meta">Manali</span>
+        <h3>Pine Ridge Lodge</h3>
+        <div class="star">★★★★☆ <span class="mut">4.4</span></div>
+        <div><span class="tag">Heater</span><span class="tag">Mountain view</span></div>
+        <div class="cardfoot"><span class="price">₹3,900<small>/night</small></span><button class="btn sm" onclick="bookHotel('Pine Ridge Lodge','Manali',3900)">Book room</button></div>
+      </div>
+    </div>
+    <div class="card" data-city="Bali">
+      <div class="ph g0" style="height:110px">🏨</div>
+      <div class="bd">
+        <span class="meta">Bali</span>
+        <h3>Ubud Jungle Villa</h3>
+        <div class="star">★★★★★ <span class="mut">4.9</span></div>
+        <div><span class="tag">Private pool</span><span class="tag">Yoga deck</span></div>
+        <div class="cardfoot"><span class="price">₹11,800<small>/night</small></span><button class="btn sm" onclick="bookHotel('Ubud Jungle Villa','Bali',11800)">Book room</button></div>
+      </div>
+    </div>
+    <div class="card" data-city="Dubai">
+      <div class="ph g1" style="height:110px">🏨</div>
+      <div class="bd">
+        <span class="meta">Dubai</span>
+        <h3>Marina Sky Hotel</h3>
+        <div class="star">★★★★☆ <span class="mut">4.5</span></div>
+        <div><span class="tag">Rooftop pool</span><span class="tag">Gym</span></div>
+        <div class="cardfoot"><span class="price">₹9,800<small>/night</small></span><button class="btn sm" onclick="bookHotel('Marina Sky Hotel','Dubai',9800)">Book room</button></div>
+      </div>
+    </div>
+    <div class="card" data-city="Mumbai">
+      <div class="ph g2" style="height:110px">🏨</div>
+      <div class="bd">
+        <span class="meta">Mumbai</span>
+        <h3>Gateway Residency</h3>
+        <div class="star">★★★★☆ <span class="mut">4.3</span></div>
+        <div><span class="tag">Wi-Fi</span><span class="tag">Breakfast</span></div>
+        <div class="cardfoot"><span class="price">₹7,200<small>/night</small></span><button class="btn sm" onclick="bookHotel('Gateway Residency','Mumbai',7200)">Book room</button></div>
+      </div>
+    </div>
+</div>
+</main>
+
+<footer>© 2026 Musafir Travels · Surat, Gujarat · support@musafir.example · Mon–Sat, 9am–7pm</footer>
+<div id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>

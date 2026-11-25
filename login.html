@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Log in – Musafir Travels</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="bar">
+    <a class="logo" href="index.html" style="text-decoration:none">🧳 Musafir</a>
+    <nav aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="hotels.html">Hotels</a>
+      <a href="flights.html">Flights</a>
+      <a href="itinerary.html">My Trips</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html">Contact</a>
+      <a href="admin.html" id="adminLink" hidden>Admin</a>
+      <a href="login.html" id="authLink" class="btn sm">Log in</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="row top" id="authForms">
+  <form class="panel" id="loginForm">
+    <h2>Log in</h2>
+    <label for="le">Email</label><input id="le" type="email" required>
+    <label for="lp">Password</label><input id="lp" type="password" required>
+    <button class="btn" style="margin-top:1rem">Log in</button>
+  </form>
+  <form class="panel" id="regForm">
+    <h2>Create account</h2>
+    <label for="rn">Full name</label><input id="rn" required>
+    <label for="re">Email</label><input id="re" type="email" required>
+    <label for="rpw">Password (6+ characters)</label><input id="rpw" type="password" minlength="6" required>
+    <button class="btn sun" style="margin-top:1rem">Register</button>
+  </form>
+</div>
+<div class="panel" id="whoBox" style="max-width:480px" hidden>
+  <h2 id="whoHi">Hi</h2>
+  <p class="mut" id="whoInfo"></p>
+  <a class="btn" href="itinerary.html">My trips</a>
+  <button class="btn alt" onclick="logout()">Log out</button>
+</div>
+</main>
+
+<footer>© 2026 Musafir Travels · Surat, Gujarat · support@musafir.example · Mon–Sat, 9am–7pm</footer>
+<div id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
